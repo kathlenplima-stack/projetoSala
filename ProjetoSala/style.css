@@ -408,21 +408,18 @@ footer {
     font-size: 24px;
 }
 
-/* ==============================================
-   MEDIA QUERY: TABLETS (Até 1024px)
-   ============================================== */
+
 @media screen and (max-width: 1024px) {
 
     header {
-        position: static; /* Remove o fixo para não cobrir o conteúdo vertical */
+        position: static;
         height: auto;
-        width: 100%; /* Mudado de 100vw para 100% */
+        width: 100%; 
         padding: 20px;
         flex-direction: column;
         gap: 20px;
     }
 
-    /* Se você quiser usar o Hamburger futuramente, mude para block */
     .hamburger {
         display: none; 
     }
@@ -451,9 +448,9 @@ footer {
     }
 
     .hero {
-        width: 100%; /* Evita quebra de layout */
+        width: 100%; 
         height: auto;
-        min-height: 70vh; /* Garante uma boa proporção sem sumir com o texto */
+        min-height: 70vh; 
         padding: 60px 20px;
     }
 
@@ -513,9 +510,7 @@ footer {
     }
 }
 
-/* ==============================================
-   MEDIA QUERY: SMARTPHONES (Até 768px)
-   ============================================== */
+
 @media screen and (max-width: 768px) {
 
     header {
