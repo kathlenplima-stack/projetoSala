@@ -408,17 +408,206 @@ footer {
     font-size: 24px;
 }
 
-@media screen (max-width: 1024px){
-    .container {
-        flex-direction: column;
-        gap: 10px
-    }
- }
+/* ==============================================
+   MEDIA QUERY: TABLETS (Até 1024px)
+   ============================================== */
+@media screen and (max-width: 1024px) {
 
- @media screen (max-width: 768px) {
-    .container {
+    header {
+        position: static; /* Remove o fixo para não cobrir o conteúdo vertical */
+        height: auto;
+        width: 100%; /* Mudado de 100vw para 100% */
+        padding: 20px;
         flex-direction: column;
-        gap: 5px
+        gap: 20px;
     }
-    
- }
+
+    /* Se você quiser usar o Hamburger futuramente, mude para block */
+    .hamburger {
+        display: none; 
+    }
+
+    nav {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .navLinks {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .sourceBar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navInput {
+        width: 90%;
+    }
+
+    .link {
+        font-size: 18px;
+    }
+
+    .hero {
+        width: 100%; /* Evita quebra de layout */
+        height: auto;
+        min-height: 70vh; /* Garante uma boa proporção sem sumir com o texto */
+        padding: 60px 20px;
+    }
+
+    .tituloHero {
+        font-size: 64px;
+    }
+
+    .conteudo-top {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .ranking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .citacao {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .textoCitacao h2 {
+        font-size: 36px;
+    }
+
+    .textoCitacao p {
+        font-size: 20px;
+    }
+
+    .estilos {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 50px 20px;
+    }
+
+    .esquerda,
+    .centro,
+    .direita {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/* ==============================================
+   MEDIA QUERY: SMARTPHONES (Até 768px)
+   ============================================== */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .logoHeader {
+        margin-bottom: 0;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navInput {
+        width: 100%;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+
+    .hero {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .tituloHero {
+        font-size: 42px;
+    }
+
+    .botaoHero {
+        width: 240px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .titulo-top {
+        font-size: 32px;
+        margin-left: 20px;
+    }
+
+    .numero {
+        font-size: 28px;
+    }
+
+    .titulo-musica {
+        font-size: 18px;
+    }
+
+    .cards-artistas {
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .card-autor {
+        max-width: 100%;
+    }
+
+    .textoCitacao h2 {
+        font-size: 28px;
+    }
+
+    .textoCitacao p {
+        font-size: 18px;
+    }
+
+    .estiloMusical {
+        width: 100%;
+        max-width: 340px;
+        height: 380px;
+    }
+
+    .estiloMusical h3 {
+        font-size: 36px;
+    }
+
+    .esquerda p {
+        font-size: 22px;
+    }
+
+    .direita h2 {
+        font-size: 30px;
+    }
+
+    .infoContato {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+    }
+}
